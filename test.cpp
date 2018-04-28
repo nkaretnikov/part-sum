@@ -7,6 +7,12 @@ int main()
   std::vector<int> arr;
   const size_t sz = 5;
 
+  std::cout << "empty:" << std::endl;
+  for (int i = 1; i < sz; ++i) {
+    std::cout << part_sum(arr, i) << std::endl;  // should return 0
+  }
+  std::cout << "----" << std::endl;
+
   for (int i = 0; i < sz; ++i) {
     const size_t sz = arr.size();
     std::cout << "sz: " << sz << std::endl;
