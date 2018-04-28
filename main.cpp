@@ -6,7 +6,6 @@
 
 int main()
 {
-  char c;
   std::cout << "type 'e' to interrupt" << std::endl;
 
   std::thread([]{
@@ -15,6 +14,7 @@ int main()
     exit(0);
   }).detach();
 
+  char c;
   while (std::cin >> c) {
     if (c == 'e') {
       std::cout << "got an abort command" << std::endl;
